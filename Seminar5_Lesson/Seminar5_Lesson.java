@@ -11,12 +11,12 @@ public class Seminar5_Lesson {
     private static final int N = 8; // Размер доски
 
     public static void main(String[] args) {
-        // task0();
-        // System.out.println(task1("paper", "title"));
-        // System.out.println(task2("<{a}+{(d*3)}>"));
-        // task5("Мороз и солнце день чудесный Еще ты дремлешь друг прелестный Пора красавица проснись.");
-        // System.out.println(task3("MMXXII"));
-        // System.out.println(task4(2022));
+        task0();
+        System.out.println(task1("paper", "title"));
+        System.out.println(task2("<{a}+{(d*3)}>"));
+        task5("Мороз и солнце день чудесный Еще ты дремлешь друг прелестный Пора красавица проснись.");
+        System.out.println(task3("MMXXII"));
+        System.out.println(task4(2022));
         task6();
     }
 
