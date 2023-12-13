@@ -8,15 +8,15 @@ import java.util.Stack;
 import java.util.TreeMap;
 
 public class Seminar5_Lesson {
-    private static final int N = 5; // Размер доски
+    private static final int N = 8; // Размер доски
 
     public static void main(String[] args) {
-        task0();
-        System.out.println(task1("paper", "title"));
-        System.out.println(task2("<{a}+{(d*3)}>"));
-        task5("Мороз и солнце день чудесный Еще ты дремлешь друг прелестный Пора красавица проснись.");
-        System.out.println(task3("MMXXII"));
-        System.out.println(task4(2022));
+        // task0();
+        // System.out.println(task1("paper", "title"));
+        // System.out.println(task2("<{a}+{(d*3)}>"));
+        // task5("Мороз и солнце день чудесный Еще ты дремлешь друг прелестный Пора красавица проснись.");
+        // System.out.println(task3("MMXXII"));
+        // System.out.println(task4(2022));
         task6();
     }
 
@@ -212,7 +212,7 @@ public class Seminar5_Lesson {
 
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < N; j++) {
-                System.out.printf("%2d ", sol[i][j]);
+                System.out.printf("%4d ", sol[i][j]);
             }
             System.out.println();
         }
@@ -235,12 +235,12 @@ public class Seminar5_Lesson {
 
         // Проверяем все возможные ходы коня
 
-        for (int k = 0; k < N; k++) {
+        for (int k = 0; k < 8; k++) {
             int nextX = x + moveX[k];
             int nextY = y + moveY[k];
             
             if (isSafe(nextX, nextY, sol)) {
-                sol[nextX][nextY] = moveCount + 1;
+                sol[nextX][nextY] = moveCount;
 
                 // Рекурсивно проверяем следующий ход
                 if (solveKnightTour(sol, nextX, nextY, moveCount + 1)) {
